@@ -24,8 +24,8 @@ public class MainActivity extends Activity {
 		});
 	}
 
-//	@Override
-	public void onWindowFocusedChanged (boolean hasFocus) {
+	@Override
+	public void onWindowFocusChanged (boolean hasFocus) {
 		logoAnimation.start();
 	}
 	@Override
