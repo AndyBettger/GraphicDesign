@@ -4,7 +4,10 @@ import android.app.Activity;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -22,6 +25,9 @@ public class MainActivity extends Activity {
 				logoAnimation = (AnimationDrawable) logoAnimHolder.getBackground();
 			}
 		});
+		TextView textAnim = (TextView) findViewById(R.id.animText);
+		Animation textAnimation = AnimationUtils.loadAnimation(this, R.anim.text_animation);
+		textAnim.startAnimation(textAnimation);
 	}
 
 	@Override
