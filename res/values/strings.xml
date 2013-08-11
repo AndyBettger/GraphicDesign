@@ -4,5 +4,6 @@
     <string name="app_name">GraphicDesign</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="content_desc">Frame Animation Example</string>
 
 </resources>
