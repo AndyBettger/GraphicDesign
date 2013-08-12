@@ -2,6 +2,7 @@ package fourth.example.graphicdesign;
 
 import android.app.Activity;
 import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.animation.Animation;
@@ -28,6 +29,10 @@ public class MainActivity extends Activity {
 		TextView textAnim = (TextView) findViewById(R.id.animText);
 		Animation textAnimation = AnimationUtils.loadAnimation(this, R.anim.text_animation);
 		textAnim.startAnimation(textAnimation);
+		TransitionDrawable trans = (TransitionDrawable) getResources().getDrawable(R.drawable.image_transition);
+		ImageView transImage = (ImageView) findViewById(R.id.imageTrans);
+		transImage.setImageDrawable(trans);
+		trans.startTransition(10000);
 	}
 
 	@Override
