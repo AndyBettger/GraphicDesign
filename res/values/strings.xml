@@ -5,6 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="content_desc">Frame Animation Example</string>
+    <string name="content_desc2">Image Animation Example</string>
     <string name="animated_text">TWEEN ANIMATION</string>
 
 </resources>
