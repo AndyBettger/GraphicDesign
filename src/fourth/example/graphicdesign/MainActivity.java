@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 		TransitionDrawable trans = (TransitionDrawable) getResources().getDrawable(R.drawable.image_transition);
 		ImageView transImage = (ImageView) findViewById(R.id.imageTrans);
 		transImage.setImageDrawable(trans);
-		trans.startTransition(10000);
+		trans.startTransition(1000);
 	}
 
 	@Override
